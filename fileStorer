@@ -1,0 +1,11 @@
+#!/bin/bash
+date
+echo -n "What kind of text would you like to store: "
+read MY_FILETYP
+if test "$MY_FILETYP" = "txt" || "$MY_FILETYP" = "png"
+	then
+		echo "Vaild Request"
+		echo "The $MY_FILETYP will be stored in it's own directory"
+		mkdir "$MY_FILETYP"S
+		mv ./*.$MY_FILETYP "$MY_FILETYP"S
+fi

@@ -1,0 +1,14 @@
+#!/bin/bash
+echo "Git & Firebase Commit Message Combo"
+echo "Enter commit message"
+read COM_MES
+if test "$COM_MES" = "no"
+    then
+        echo "Are you sure you want to commit to both right now?"
+        read ANSW
+        if test "$ANSW" = "yes" || "$ANSW" = "yes"
+            then
+            git commit -m "$COM_MES"
+            firebase deploy -m "$COM_MES" 
+        fi
+fi

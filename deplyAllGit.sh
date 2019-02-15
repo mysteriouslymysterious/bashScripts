@@ -1,6 +1,6 @@
 #!/bin/bash
 # Made to make git add, commit, push all at once
-echo "Git Commit & Github Push Combo"
+echo "Git Add & Commit & Github Push Combo"
 echo "Enter commit message"
 read COM_MES
 if test "$COM_MES" != "no"

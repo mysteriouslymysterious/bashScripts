@@ -1,6 +1,6 @@
 #!/bin/bash
-date
-echo -n "What kind of text would you like to store: "
+echo -e "Filestorer 9000 groups user defined file type into a specified folder named it's own file type \nCurrently only accepts txt & png requests"
+echo -n "What kind of file would you like to store into a group folder: "
 read MY_FILETYP
 if test "$MY_FILETYP" = "txt" || "$MY_FILETYP" = "png"
 	then

@@ -2,10 +2,17 @@
 # Made to make git add, commit, push all at once
 echo "Git Add & Commit & Github Push Combo"
 echo "Enter commit message"
-read COM_MES
-if test "$COM_MES" != "no"
-then
+read mes
+
+while [ "$mes" != "no" ] 
+do
+    if [ ! -n "$mes" ]
+    then
+        echo "Commit Message was empty."
+        break
+    fi
     git add -A
-    git commit -m "$COM_MES"
+    git commit -m "$mes"
     git push origin master
-fi
+    break
+done

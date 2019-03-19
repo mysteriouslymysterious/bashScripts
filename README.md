@@ -1,3 +1,3 @@
 # Bash Scripts 
 
-Collection of bash scripts working on, or currently used personally
+Collection of bash scripts being worked on, or currently in use
